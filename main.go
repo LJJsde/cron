@@ -16,5 +16,6 @@ func main() {
 		panic(err)
 	}
 	log.Println("redis connect success")
-
+	task := "111"
+	
 }

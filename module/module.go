@@ -7,8 +7,9 @@ import (
 )
 
 var (
-	ErrTimeSet      = errors.New("set time error")
-	ErrNotAFunction = errors.New("this is not a func")
+	ErrTimeSet         = errors.New("set time error")
+	ErrNotAFunction    = errors.New("this is not a func")
+	ErrParamsNotEnongh = errors.New("missing params")
 )
 
 type Task struct {
