@@ -1,8 +1,10 @@
 package main
 
 import (
+	"awesomeProject7/service"
 	"github.com/go-redis/redis"
 	"log"
+	"time"
 )
 
 func main() {
@@ -17,5 +19,5 @@ func main() {
 	}
 	log.Println("redis connect success")
 	task := "111"
-	
+	service.Create(1).Weekday(1, 0).Loc(time.Local).Run(task)
 }

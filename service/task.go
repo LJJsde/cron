@@ -51,3 +51,8 @@ func SetTime(t string) (hour, min, sec int, err error) {
 
 	return hour, min, sec, nil
 }
+func Create(RepateTime uint) *module.Task {
+	t := module.Task{}
+	task := CreateNewTask(RepateTime).Loc(t.LocalTime)
+	return task
+}
