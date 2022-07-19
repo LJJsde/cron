@@ -7,11 +7,8 @@ import (
 )
 
 var (
-	ErrTimeSet              = errors.New("set time error")
-	ErrParamsNotAdapted     = errors.New("the number of params is not adapted")
-	ErrNotAFunction         = errors.New("this is not a func")
-	ErrPeriodNotSpecified   = errors.New("unspecified job period")
-	ErrParameterCannotBeNil = errors.New("nil paramaters cannot be used with reflection")
+	ErrTimeSet      = errors.New("set time error")
+	ErrNotAFunction = errors.New("this is not a func")
 )
 
 type Task struct {
